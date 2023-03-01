@@ -8,12 +8,12 @@
       "executor": "@nrwl/cypress:cypress",
       "options": {
         "cypressConfig": "e2e/cypress.config.ts",
-        "devServerTarget": "zenowebapp:serve:development",
+        "devServerTarget": "frontend:serve:development",
         "testingType": "e2e"
       },
       "configurations": {
         "production": {
-          "devServerTarget": "zenowebapp:serve:production"
+          "devServerTarget": "frontend:serve:production"
         }
       }
     },
@@ -26,5 +26,5 @@
     }
   },
   "tags": [],
-  "implicitDependencies": ["zenowebapp"]
+  "implicitDependencies": ["frontend"]
 }

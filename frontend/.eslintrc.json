@@ -15,7 +15,7 @@
           "error",
           {
             "type": "attribute",
-            "prefix": "zenowebapp",
+            "prefix": "frontend",
             "style": "camelCase"
           }
         ],
@@ -23,7 +23,7 @@
           "error",
           {
             "type": "element",
-            "prefix": "zenowebapp",
+            "prefix": "frontend",
             "style": "kebab-case"
           }
         ]
