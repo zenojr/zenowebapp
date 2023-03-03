@@ -1,0 +1,21 @@
+import { Meta, moduleMetadata, Story } from '@storybook/angular';
+import { <%= className %>Component  } from './<%= fileName %>.component';
+import { <%= className %>Mock as Mock } from './<%= fileName %>.component.mock';
+import { <%= className %>Model as Model } from './<%= fileName %>.component.model';
+import { <%= className %>Module  } from './<%= fileName %>.module';
+
+export default {
+  title: 'Components / Molecule / <%= titleName %>',
+  component: <%= className %>Component,
+
+  decorators: [
+    moduleMetadata({
+      imports: [<%= className %>Module],
+    }),
+  ],
+} as Meta;
+
+export const empty: Story<Model.Input> = (props) => ({ props });
+
+export const initial: Story<Model.Input> = (props) => ({ props });
+initial.args = Mock.initial;

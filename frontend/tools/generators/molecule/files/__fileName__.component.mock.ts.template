@@ -1,0 +1,7 @@
+import { <%= className %>Model as Model } from './<%= fileName %>.component.model'
+
+export namespace <%= className %>Mock {
+  export const initial: Model.Input = {
+    placeholder: {}
+  };
+}

@@ -1,0 +1,5 @@
+export namespace <%= className %>Model {
+  export interface Input {
+    placeholder: any //You should replace this, or remove it if the component does not need a input
+  }
+}

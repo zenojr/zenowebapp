@@ -1,0 +1,13 @@
+import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
+import { <%= className %>Model as Model } from './<%= fileName %>.component.model';
+
+@Component({
+  selector: 'molecule-<%= fileName %>',
+  templateUrl: './<%= fileName %>.component.html',
+  styleUrls: ['./<%= fileName %>.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
+})
+export class <%= className %>Component { 
+  @Input()
+  placeholder!: Model.Input;
+}
