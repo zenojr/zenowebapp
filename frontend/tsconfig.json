@@ -1,18 +1,5 @@
 {
   "compilerOptions": {
-    "rootDir": ".",
-    "sourceMap": true,
-    "declaration": false,
-    "moduleResolution": "node",
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "importHelpers": true,
-    "target": "es2022",
-    "module": "esnext",
-    "lib": ["es2017", "dom"],
-    "skipLibCheck": true,
-    "skipDefaultLibCheck": true,
-    "baseUrl": ".",
     "useDefineForClassFields": false,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
@@ -24,6 +11,9 @@
   "files": [],
   "include": [],
   "references": [
+    {
+      "path": "./tools/tsconfig.tools.json"
+    },
     {
       "path": "./tsconfig.app.json"
     },
@@ -37,8 +27,6 @@
       "path": "./.storybook/tsconfig.json"
     }
   ],
-  "compileOnSave": false,
-  "exclude": ["node_modules", "tmp"],
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
@@ -49,5 +37,6 @@
     "compilerOptions": {
       "module": "commonjs"
     }
-  }
+  },
+  "extends": "./tsconfig.base.json"
 }
