@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "zeno-website": {
+      "hosting": {
+        "frontend": [
+          "zeno-website"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "zeno-website"
+  }
+}
